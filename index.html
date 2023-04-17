@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://drive.google.com/uc?id=1VPaDsadb5voerjlKMdKXiMZCN7RFKCho">
+  <link rel="icon" href="https://drive.google.com/uc?id=1WgXDaWod5om8Lvl4P8DK7PopEsQmzr7z" />
+  <link rel="apple-touch-icon" href="https://drive.google.com/uc?id=1GCvHsae_tXnCjCylzlD8pr3bv94O6ox_" />
+  <title>Personal Profile</title>
+  
+</head>
+
+<body>
+	<p class="head">Read the messages below:</p>
+	<p class="subhead">Hi, if you contact me and watch my video, please follow these steps:</p>
+
+	<ol>
+	  <li>First, click the "Continue" button below.</li>
+	  <li>Create a profile on the website that you are directed to.</li>
+	  <li>Confirm your email address.</li>
+	  <li>Search for my username "fshf3459" within the website.</li>
+	</ol>
+
+  
+  <button onclick="myFunction()">Continue</button>
+  
+  <script>
+    function myFunction() {
+      var app = "vnd.youtube://youtube.com/redirect?event=comments&redir_token=QUFFLUhqa1lhTG8wamNLVmh5cEpBNzhxeEhrVlRITFZNZ3xBQ3Jtc0ttM2NkRS11UTU4SGtQR1JLdjRlNzhsWmFCTTU1QmhvZ3NQYWxfUkJyaHQ0VGFCbm4xUW9sWFhfay1CR2JwM0U0ZE9HLUUzQ1o4elpWTURYTjRkVEFkYWlEdm9MR0NOZFgyWHdyZw&q=https%3A%2F%2Fcutt.ly%2FD7LgGrH&html_redirect=1";
+      var mobileFallback = "https://cutt.ly/D7Lg";
+      var desktopFallback = "https://cutt.ly/D7Lg";
+
+      if (/Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        window.location = app;
+        window.setTimeout(function() {
+          window.location = mobileFallback;
+        }, 25);
+      } else {
+        window.location = desktopFallback;
+      }
+
+      function killPopup() {
+        window.removeEventListener('pagehide', killPopup);
+      }
+
+      window.addEventListener('pagehide', killPopup);
+    }
+  </script>
+   
+</body>
+</html>
